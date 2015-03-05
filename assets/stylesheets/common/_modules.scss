@@ -8,11 +8,10 @@
   background-color: $color-white;
   border: $border;
   border-top: 0;
-  @include border-bottom-radius($mod-border-radius);
+  @include border-radius($mod-border-radius);
+
   @media #{$mq-med} {
     border: $border;
-    @include border-bottom-radius(0);
-    @include border-right-radius($mod-border-radius);
   }
 }
 

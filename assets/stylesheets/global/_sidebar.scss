@@ -1,5 +1,9 @@
 .g-sidebar {
-  padding: $space*2;
+  padding: $space;
+
+  @media #{$mq-med} {
+    padding: $space*2;
+  }
 
   li {
     display: inline-block;
@@ -24,10 +28,17 @@
   background-color: $color-grey-med;
   @include border-radius(5rem);
   margin-right: $space/2;
-  margin-bottom: $space;
 }
 
 .g-sidebar-user-count {
   @include type-size(large);
   font-weight: bold;
+}
+
+.g-sidebar-sign-up {
+  margin-top: $space;
+
+  @media #{$mq-med} {
+    margin-top: $space*2;
+  }
 }

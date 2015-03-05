@@ -32,5 +32,23 @@ $(function() {
       }, 750);
     }
   });
+
+  $('body').on('click', '.js-trigger-modal', function(e) {
+    e.preventDefault();
+
+    $('.js-modal').removeClass('active');
+
+    modal = $(this).data('modal');
+    $activeModal = $('.js-modal').filter(function() {
+      return $(this).data('modal') == modal
+    });
+    $activeModal.addClass('active')
+  });
+
+  $('body').on('click', '.js-modal-close', function(e) {
+    e.preventDefault();
+
+    $('.js-modal').removeClass('active');
+  });
 });
 

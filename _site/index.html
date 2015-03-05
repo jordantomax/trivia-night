@@ -16,17 +16,63 @@
   <body>
     <header class="g-header">
       <div class="l-wrap">
-        <h2 class="g-header-logo"><a href="http://localhost:4000">Trivia Night!</a></h2>
+        <h3 class="g-header-logo"><a href="http://localhost:4000">Trivia Night!</a></h3>
 
         <div class="g-header-nav">
           <ul>
             <li>
-              <a href="">Log In</a>
+              <a href="" class="js-trigger-modal" data-modal="log-in">Log In</a>
             </li>
+
             <li>
-              <a href="" class="ui-btn">Sign Up</a>
+              <a href="" class="js-trigger-modal ui-btn" data-modal="sign-up">Sign Up</a>
             </li>
           </ul>
+        </div>
+
+        <div class="mod-modal js-modal" data-modal="sign-up">
+          <div class="mod-modal-mask js-modal-close"></div>
+          <div class="mod-modal-content">
+            <a href="" class="mod-modal-close js-modal-close">
+              <i class="icon-cross"></i>
+            </a>
+            <h1 class="mod-modal-header">Sign Up</h1>
+            <form action="" method="post">
+              <label>Email</label>
+              <input type="password" class="s-stretch ui-form-input-large" placeholder="example@email.com" class="text" value="" name="">
+              <label>Password</label>
+              <input type="password" class="s-stretch ui-form-input-large" class="text" value="" name="">
+            </form>
+            <footer class="mod-modal-footer">
+              <p class="type-secondary">
+                <span>Already have an account?</span>
+                <a data-modal="log-in" href="" class="js-trigger-modal">Log In</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+
+        <div class="mod-modal js-modal" data-modal="log-in">
+          <div class="mod-modal-mask js-modal-close"></div>
+          <div class="mod-modal-content">
+            <a href="" class="mod-modal-close js-modal-close">
+              <i class="icon-cross"></i>
+            </a>
+            <h1 class="mod-modal-header">Log In</h1>
+            <form action="" method="post">
+              <label>Email</label>
+              <input type="password" class="s-stretch ui-form-input-large" placeholder="example@email.com" class="text" value="" name="">
+              <label>Password</label>
+              <input type="password" class="s-stretch ui-form-input-large" class="text" value="" name="">
+            </form>
+          </div>
+
+          <footer class="mod-modal-footer">
+            <p class="type-secondary">
+              <span>Don't have an account?</span>
+              <a data-modal="sign-up" href="" class="js-trigger-modal">Sign Up</a>
+            </p>
+          </footer>
         </div>
       </div>
     </header>
@@ -41,10 +87,15 @@
     <li>
       <div class="g-sidebar-user-avatar"></div>
     </li>
+
     <li class="js-count g-sidebar-user-count">
       <span class="js-count-correct">0</span>
       <span>/</span>
       <span class="js-count-total">0</span>
+    </li>
+
+    <li class="type-small g-sidebar-sign-up">
+      <span><a class="js-trigger-modal" data-modal="sign-up">Sign up</a> now to get exclusive trivia sets.</span>
     </li>
   </ul>
 </div>

@@ -1,15 +1,19 @@
 .ui-btn, button, input[type="submit"] {
+  display: inline-block;
   font-weight: bold;
   background-color: $color-accent;
   color: $color-white;
   border: 0;
   @include ui-btn-height($space*2);
   padding: 0 1.5em;
+  height: $ui-height;
+  line-height: $ui-height;
   text-align: center;
   @include border-radius($ui-border-radius);
 
   &:hover {
     background-color: lighten($color-accent, 10);
+    color: $color-white;
   }
 }
 

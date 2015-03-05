@@ -1,3 +1,7 @@
+.s-stretch {
+  width: 100%;
+}
+
 @for $i from 1 through 6 {
   .s#{$i} {
     margin-bottom: $space*$i;

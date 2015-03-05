@@ -7,7 +7,14 @@
 
 .g-header-logo {
   float: left;
+  @include type-size(large);
   line-height: $g-header-height;
+  margin-bottom: 0;
+
+  @media #{$mq-med} {
+    @include type-size(xlarge);
+    line-height: $g-header-height;
+  }
 }
 
 .g-header-nav {
