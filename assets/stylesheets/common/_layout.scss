@@ -1,0 +1,36 @@
+.l-wrap {
+  padding: 0 $space*2;
+  max-width: $l-max-width;
+  margin: 0 auto;
+  @include clearfix();
+}
+
+.l-sidebar {
+  @media #{$mq-med} {
+    width: $l-sidebar-width;
+    float: left;
+  }
+}
+
+.l-sidebar-left {
+  @media #{$mq-med} {
+    width: $l-sidebar-width;
+    float: left;
+  }
+}
+
+
+.l-main {
+  @media #{$mq-med} {
+    margin-left: $l-sidebar-width;
+  }
+}
+
+.l-main-right {
+  @extend .l-main;
+
+  @media #{$mq-med} {
+    padding-right: 0;
+    padding-left: $l-sidebar-width + $space;
+  }
+}

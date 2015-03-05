@@ -1,0 +1,29 @@
+.g-header {
+  @include clearfix();
+  background-color: $color-white;
+  @include ui-box-shadow();
+  border-bottom: $border-light;
+}
+
+.g-header-logo {
+  float: left;
+  line-height: $g-header-height;
+}
+
+.g-header-nav {
+  float: right;
+
+  li {
+    display: inline-block;
+    margin-left: $space/2;
+    line-height: $g-header-height;
+  }
+}
+
+.g-header-user {
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+

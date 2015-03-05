@@ -1,0 +1,27 @@
+.ui-btn, button, input[type="submit"] {
+  font-weight: bold;
+  background-color: $color-accent;
+  color: $color-white;
+  border: 0;
+  @include ui-btn-height($space*2);
+  padding: 0 1.5em;
+  text-align: center;
+  @include border-radius($ui-border-radius);
+
+  &:hover {
+    background-color: lighten($color-accent, 10);
+  }
+}
+
+.ui-btn-set {
+  > * {
+    display: inline-block;
+    margin-bottom: $space/2;
+  }
+}
+
+.ui-btn-large {
+  @extend .ui-btn;
+  @include ui-btn-height($space*3);
+  @include type-size(xlarge);
+}

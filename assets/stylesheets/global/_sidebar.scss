@@ -1,0 +1,33 @@
+.g-sidebar {
+  padding: $space*2;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
+
+.g-sidebar-profile-configure {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2rem;
+  line-height: 1em;
+  margin-left: $space;
+}
+
+.g-sidebar-user-avatar {
+  @include dim(4rem);
+  background-color: $color-grey-med;
+  @include border-radius(5rem);
+  margin-right: $space/2;
+  margin-bottom: $space;
+}
+
+.g-sidebar-user-count {
+  @include type-size(large);
+  font-weight: bold;
+}

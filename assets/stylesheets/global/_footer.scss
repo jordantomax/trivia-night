@@ -1,0 +1,5 @@
+.g-footer {
+  margin-top: $space;
+  @include type-size(small);
+  font-weight: bold;
+}

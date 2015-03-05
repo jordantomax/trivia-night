@@ -1,0 +1,105 @@
+.mod-question {
+  padding: $space*2;
+
+  @media #{$mq-med} {
+    padding: $space*6;
+  }
+}
+
+.mod-question-answers {
+  border-top: $border-light;
+  @include clearfix();
+  @include border-bottom-radius($mod-border-radius);
+
+  li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-right: $border-light;
+    border-bottom: $border-light;
+    padding: $space*3 0;
+    @include transition();
+    cursor: pointer;
+    @include type-size(large);
+
+    @media #{$mq-med} {
+      width: 20%;
+      border-bottom: 0;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    &:hover {
+      background-color: $color-grey-xxlight;
+    }
+
+    &.right {
+      background-color: rgba($color-green, 0.075);
+      .check {
+        color: $color-green;
+        opacity: 1;
+      }
+    }
+
+    &.wrong {
+      background-color: rgba($color-red, 0.075);
+      .x {
+        color: $color-red;
+        opacity: 1;
+      }
+    }
+
+    .x, .check {
+      opacity: 0;
+      @include type-size(xlarge);
+      position: absolute;
+      top: $space/4;
+      right: $space/4;
+      @include transition();
+    }
+  }
+}
+
+.mod-question-answer {
+  position: relative;
+
+  &:before {
+    font-weight: bold;
+    position: absolute;
+    top: $space/2;
+    left: $space;
+  }
+
+  &.index-0 {
+    &:before {
+      content: 'A'
+    }
+  }
+
+  &.index-1 {
+    &:before {
+      content: 'B'
+    }
+  }
+
+  &.index-2 {
+    &:before {
+      content: 'C'
+    }
+  }
+
+  &.index-3 {
+    &:before {
+      content: 'D'
+    }
+  }
+
+  &.index-4 {
+    &:before {
+      content: 'E'
+    }
+  }
+}
+

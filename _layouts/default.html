@@ -1,0 +1,14 @@
+{% include header.html %}
+
+<div class="l-wrap">
+  <div class="g-content">
+    {% if page.sidebar %}
+      {% include sidebar.html %}
+    {% endif %}
+    {{ content }}
+  </div>
+</div>
+
+{% include templates.html %}
+{% include footer.html %}
+

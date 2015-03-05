@@ -1,0 +1,41 @@
+---
+  is_subpage: true
+---
+
+{% include header.html %}
+  <article class="layout-main mod-main">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <time class="post-date" datetime="{{page.date}}">{{ page.date | date: "%B %-d, %Y"}}</time>
+    </header>
+
+    <div class="post-body">
+      {% if page.bannerImg %}
+      <figure class="post-banner-img-figure">
+        <img class="post-banner-img" src="{{ site.url }}/assets/img/{{ page.bannerImg }}" alt="{{ page.title}}"/>
+        {% if page.bannerImgCaption %}
+          <figcaption class="post-banner-img-caption">{{ page.bannerImgCaption }}</figcaption>
+        {% endif %}
+      </figure>
+      {% endif %}
+
+      {{ content }}
+    </div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+        {% for tag in page.tags %}
+          <li>
+            <a href="{{ site.url}}/tag/{{ tag }}">{{ tag }}</a>
+          </li>
+        {% endfor %}
+      </div>
+
+      <div class="post-connect">
+        <p>It would be so nice to meet you on <a target="_blank" href="http://twitter.com/jordancooperman">Twitter</a>.</p>
+      </div>
+    </footer>
+  </article>
+
+  {% include sidebar.html %}
+{% include footer.html %}

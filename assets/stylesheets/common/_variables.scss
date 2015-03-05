@@ -1,0 +1,69 @@
+$space: 1.6rem;
+$background: #f4f0ea;
+$background: #f3f3f3;
+
+$g-header-height: $space*3;
+
+$l-sidebar-width: 22rem;
+$l-max-width: 120rem;
+
+$el-headers: h1, h2, h3, h4, h5, h6;
+
+$mq-sm-width: 35rem;
+$mq-med-width: 60rem;
+
+$mq-text-mob: "only screen and (min-width:";
+$mq-text-desk: "only screen and (max-width:";
+$mq-text-close: ")";
+
+$mq-sm: $mq-text-mob + $mq-sm-width + $mq-text-close;
+$mq-med: $mq-text-mob + $mq-med-width + $mq-text-close;
+$mq-sm-desk: $mq-text-desk + $mq-sm-width + $mq-text-close;
+$mq-med-desk: $mq-text-desk + $mq-med-width + $mq-text-close;
+
+// colors
+$color-grey-xdark: #111;
+$color-grey-dark: #444;
+$color-grey-med: #888;
+$color-grey-light: #ddd;
+$color-grey-xlight: #f1f1f1;
+$color-grey-xxlight: #fcfcfc;
+$color-white: #fff;
+$color-black: #000;
+$color-blue: #0f8dd6;
+$color-green: #6ec798;
+$color-red: #e35959;
+$color-yellow: #f1c500;
+$color-accent: $color-blue;
+
+// abstracted color names
+$color-title: $color-grey-xdark;
+$color-type: $color-grey-xdark;
+$color-type-secondary: $color-grey-med;
+$color-link: $color-blue;
+
+$border-style: 1px solid;
+
+$ui-border-radius: 0.35rem;
+
+$mod-notify-width: 50rem;
+$mod-border-radius: $ui-border-radius*2;
+
+$border: $border-style $color-grey-light;
+$border-light: $border-style rgba($color-grey-light, 0.6);
+
+$type-font-family: "lft-etica", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$type-weight-normal: normal;
+$type-base-font-size: 10;
+$type-base-font-unit: px;
+$type-weight-light: 300;
+$type-weight-bold: 600;
+
+$type-sizes: (
+  xsmall: (9, 1.5),
+  small:  (14, 1.5),
+  body:   (16, 1.55),
+  large:  (18,  1.2),
+  xlarge: (36,  1.3),
+  huge:   (44, 1.2)
+);

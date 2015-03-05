@@ -1,0 +1,39 @@
+.mod {
+  padding: $space*2;
+  margin-bottom: $space;
+  @include border-radius($ui-border-radius);
+}
+
+.mod-main  {
+  background-color: $color-white;
+  border: $border;
+  border-top: 0;
+  @include border-bottom-radius($mod-border-radius);
+  @media #{$mq-med} {
+    border: $border;
+    @include border-bottom-radius(0);
+    @include border-right-radius($mod-border-radius);
+  }
+}
+
+.mod-sidebar {
+  padding: $space;
+  border-bottom: $border-light;
+
+  @media #{$mq-med} {
+    border-bottom: 0;
+  }
+}
+
+.mod-info {
+  @extend .mod;
+  border: $border;
+}
+
+.mod-white {
+  @extend .mod;
+  background-color: $color-white;
+  @include ui-box-shadow();
+  border: $border;
+}
+

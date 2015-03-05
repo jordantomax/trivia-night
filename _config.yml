@@ -1,0 +1,8 @@
+name: "Trivia Night!"
+description: ""
+url: "/trivia-night"
+sass:
+    sass_dir: assets/stylesheets/
+exclude: ['Gruntfile.js', 'node_modules', 'package.json']
+gems:
+  - jekyll-redirect-from

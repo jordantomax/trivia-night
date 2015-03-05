@@ -1,0 +1,6 @@
+.g-content {
+  margin: $space 0;
+  background-color: rgba($color-white, 0.75);
+  border: $border-light;
+  @include border-radius($mod-border-radius);
+}
