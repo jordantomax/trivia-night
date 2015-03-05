@@ -663,8 +663,8 @@ input[type="password"] {
   padding-right: 6.4rem; }
   @media only screen and (min-width: 60rem) {
     .mod-notify {
-      width: 50rem;
-      margin-left: -25rem;
+      width: 70rem;
+      margin-left: -35rem;
       left: 50%; } }
   .mod-notify a {
     display: inline; }
@@ -714,12 +714,12 @@ input[type="password"] {
     .mod-question-answers li:hover {
       background-color: #fcfcfc; }
     .mod-question-answers li.right {
-      background-color: rgba(110, 199, 152, 0.075); }
+      background-color: rgba(110, 199, 152, 0.15); }
       .mod-question-answers li.right .check {
         color: #6ec798;
         opacity: 1; }
     .mod-question-answers li.wrong {
-      background-color: rgba(227, 89, 89, 0.075); }
+      background-color: rgba(227, 89, 89, 0.15); }
       .mod-question-answers li.wrong .x {
         color: #e35959;
         opacity: 1; }

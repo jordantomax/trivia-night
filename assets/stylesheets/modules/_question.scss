@@ -36,7 +36,7 @@
     }
 
     &.right {
-      background-color: rgba($color-green, 0.075);
+      background-color: rgba($color-green, 0.15);
       .check {
         color: $color-green;
         opacity: 1;
@@ -44,7 +44,7 @@
     }
 
     &.wrong {
-      background-color: rgba($color-red, 0.075);
+      background-color: rgba($color-red, 0.15);
       .x {
         color: $color-red;
         opacity: 1;
