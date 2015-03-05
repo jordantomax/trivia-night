@@ -3,7 +3,7 @@
   position: fixed;
   width: $mod-modal-width;
   left: 50%;
-  top: 20rem;
+  top: 15rem;
   margin-left: -#{$mod-modal-width/2};
   z-index: 10;
 
@@ -28,7 +28,7 @@
 .mod-modal-content {
   position: relative;
   background-color: $color-white;
-  padding: $space*2.5;
+  padding: $space*3;
   border: $border;
   @include border-radius($mod-border-radius);
 }

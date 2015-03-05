@@ -38,11 +38,21 @@
             </a>
             <h1 class="mod-modal-header">Sign Up</h1>
             <form action="" method="post">
-              <label>Email</label>
-              <input type="password" class="s-stretch ui-form-input-large" placeholder="example@email.com" class="text" value="" name="">
-              <label>Password</label>
-              <input type="password" class="s-stretch ui-form-input-large" class="text" value="" name="">
+              <div class="ui-form-pair">
+                <label>Email</label>
+                <input type="email" class="s-stretch ui-form-input-large" placeholder="example@email.com" class="text" value="" name="">
+              </div>
+
+              <div class="ui-form-pair">
+                <label>Password</label>
+                <input type="password" class="s-stretch ui-form-input-large" class="text" value="" name="">
+              </div>
+
+              <div class="ui-form-pair type-right">
+                <button class="js-modal-close">Sign Up</button>
+              </div>
             </form>
+
             <footer class="mod-modal-footer">
               <p class="type-secondary">
                 <span>Already have an account?</span>
@@ -60,10 +70,20 @@
             </a>
             <h1 class="mod-modal-header">Log In</h1>
             <form action="" method="post">
-              <label>Email</label>
-              <input type="password" class="s-stretch ui-form-input-large" placeholder="example@email.com" class="text" value="" name="">
-              <label>Password</label>
-              <input type="password" class="s-stretch ui-form-input-large" class="text" value="" name="">
+              <div class="ui-form-pair">
+                <label>Email</label>
+                <input type="email" class="s-stretch ui-form-input-large" placeholder="example@email.com" class="text" value="" name="">
+              </div>
+
+              <div class="ui-form-pair">
+                <label>Password</label>
+                <input type="password" class="s-stretch ui-form-input-large" class="text" value="" name="">
+                <a class="ui-form-input-link js-trigger-modal" data-modal="forget-password">Forget Password?</a>
+              </div>
+
+              <div class="ui-form-pair type-right">
+                <button class="js-modal-close">Log In</button>
+              </div>
             </form>
           </div>
 
@@ -73,6 +93,27 @@
               <a data-modal="sign-up" href="" class="js-trigger-modal">Sign Up</a>
             </p>
           </footer>
+        </div>
+
+        <div class="mod-modal js-modal" data-modal="forget-password">
+          <div class="mod-modal-mask js-modal-close"></div>
+          <div class="mod-modal-content">
+            <a href="" class="mod-modal-close js-modal-close">
+              <i class="icon-cross"></i>
+            </a>
+            <h1 class="mod-modal-header">Reset Your Password</h1>
+            <p>We'll send you a email instructions to reset your password</p>
+            <form action="" method="post">
+              <div class="ui-form-pair">
+                <label>Email</label>
+                <input type="email" class="s-stretch ui-form-input-large" placeholder="example@email.com" class="text" value="" name="">
+              </div>
+
+              <div class="ui-form-pair type-right">
+                <button class="js-modal-close">Send It Over</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </header>

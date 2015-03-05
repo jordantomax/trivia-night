@@ -478,6 +478,9 @@ b, strong {
 .type-center {
   text-align: center; }
 
+.type-right {
+  text-align: right; }
+
 .type-weight-normal {
   font-weight: normal; }
 
@@ -536,7 +539,6 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
   padding: 0.8rem;
-  margin-bottom: 3.2rem;
   height: 3.5rem;
   line-height: 3.5rem;
   border-top-left-radius: 0.35rem;
@@ -548,15 +550,23 @@ input[type="password"] {
   input[type="email"]:focus,
   input[type="password"]:focus {
     outline: 0; }
-  input[type="text"]:last-child,
-  input[type="email"]:last-child,
-  input[type="password"]:last-child {
-    margin-bottom: 0; }
   input[type="text"].ui-form-input-large,
   input[type="email"].ui-form-input-large,
   input[type="password"].ui-form-input-large {
     height: 4.5rem;
     line-height: 4.5rem; }
+
+.ui-form-pair {
+  margin-bottom: 3.2rem; }
+  .ui-form-pair:last-child {
+    margin-bottom: 0; }
+
+.ui-form-input-link {
+  text-align: right;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  padding: 0.8rem 0;
+  display: inline-block; }
 
 .s-header {
   padding: 1.6rem 0 3.2rem 0; }
@@ -770,7 +780,7 @@ input[type="password"] {
   position: fixed;
   width: 40rem;
   left: 50%;
-  top: 20rem;
+  top: 15rem;
   margin-left: -20rem;
   z-index: 10; }
   .mod-modal.active {
@@ -790,7 +800,7 @@ input[type="password"] {
 .mod-modal-content {
   position: relative;
   background-color: #fff;
-  padding: 4rem;
+  padding: 4.8rem;
   border: 1px solid #ddd;
   border-top-left-radius: 0.7rem;
   border-top-right-radius: 0.7rem;
